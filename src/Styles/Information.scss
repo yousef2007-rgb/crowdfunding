@@ -1,0 +1,38 @@
+$green:hsl(176, 72%, 28%);
+.InformationContainer{
+    background-color: white;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border: 1px solid silver;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 5px  #888888;
+    width: 90%;
+    p{
+        font-size: 11px;
+        color: gray;
+        line-height: 25px;
+    }
+    h2{
+        margin: 0;
+    }
+}
+.percentageContainer{
+    width: 100%;
+    height: 15px;
+    background-color: silver;
+    border-radius: 10px;
+}
+.percentage{
+    background-color: $green;
+    border-radius: 10px;
+    height: 100%;
+    width: 89.914%;
+}

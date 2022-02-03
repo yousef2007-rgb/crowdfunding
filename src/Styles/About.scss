@@ -1,0 +1,112 @@
+$green:hsl(176, 72%, 28%);
+$gray:hsl(0, 0%, 48%);
+.AboutContainer{
+    background-color: white;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    border: 1px solid silver;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 5px  #888888;
+    p{
+        font-size: 11px;
+        color: gray;
+        line-height: 25px;
+    }
+    h2{
+        margin: 0;
+        width: fit-content;
+        text-align: left;
+    }
+}
+.rewardCard{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    position: relative;
+    border: 1px solid silver;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px  #888888;
+    margin-top: 20px;
+    h3{
+        margin: 0;
+    }
+    p{
+        font-size: 11px;
+        color: gray;
+        line-height: 25px;
+    }
+    span{
+        font-size: 11px;
+        color: $green;
+        margin-top: 15px;
+    }
+    div{
+        display: flex;
+        align-items: center;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        background-color: $green;
+        height: fit-content;
+        padding: 15px 30px;
+        border-radius: 30px;
+        width: fit-content;
+    }
+}
+#outOfStockCard{
+    opacity: 0.5;
+    a{
+    background-color: $gray;
+    }
+}
+.thankCard{
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid silver;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 5px  #888888;
+    max-width: 290px;
+    background-color: white;
+    a{
+        text-decoration: none;
+        color: white;
+        background-color: $green;
+        height: fit-content;
+        padding: 15px 30px;
+        border-radius: 30px;
+        width: fit-content;
+    }
+}
+.blur{
+    flex-direction: column;    
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    top: 0px;
+    left: 0px;    
+    background: rgba(0,0,0,.60);
+}
+#hide{
+    display: none;
+}
+#show{
+    display: flex;
+}

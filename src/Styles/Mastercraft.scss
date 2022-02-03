@@ -1,0 +1,50 @@
+$green:hsl(176, 72%, 28%);
+.MastercraftContainer{
+    background-color: white;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border: 1px solid silver;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 5px  #888888;
+    width: 90%;
+    p{
+        font-size: 11px;
+        color: gray;
+        margin-bottom: 40px;
+        line-height: 25px;
+    }
+}
+.mastercraftLogo{
+    position: absolute;
+    width: fit-content;
+    top: -28px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.donateSection{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.donateBtn{
+    text-decoration: none;
+    color: white;
+    background-color: $green;
+    height: fit-content;
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+.bookmarkBtn{
+    cursor: pointer;
+}
