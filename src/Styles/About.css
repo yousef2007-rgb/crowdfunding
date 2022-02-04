@@ -20,6 +20,9 @@
   border-radius: 15px;
   -webkit-box-shadow: 5px  #888888;
           box-shadow: 5px  #888888;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
 }
 
 .AboutContainer p {
@@ -157,6 +160,7 @@
   top: 0px;
   left: 0px;
   background: rgba(0, 0, 0, 0.6);
+  padding: 0;
 }
 
 #hide {

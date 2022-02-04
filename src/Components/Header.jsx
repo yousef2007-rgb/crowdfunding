@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import '../Styles/Header.css'
 export default function Header() {
   const [menuBtn,setMenuBtn] = useState(menuIcon);
+  const [menuVisablity,setMenuVisablity] = useState("hide");
   return <div className='HeaderContainer'>
       <div className='logoContainer'>
         <img src={Logo} alt='site logo' />
@@ -18,12 +19,36 @@ export default function Header() {
       <div onClick={()=>{
         if(menuBtn == menuIcon){
         setMenuBtn(closeIcon);
+        setMenuVisablity("show");
         }else{
         setMenuBtn(menuIcon);
+        setMenuVisablity("hide");
         }
       }} className='menuBtn'>
         <img src={menuBtn} alt='menu icon' />
       </div>
-
+      <div id={menuVisablity} className='blur'>
+      <div className='HeaderContainer' style={{padding:'20px'}}>
+      <div className='logoContainer'>
+        <img src={Logo} alt='site logo' />
+      </div>
+      <div onClick={()=>{
+        if(menuBtn == menuIcon){
+        setMenuBtn(closeIcon);
+        setMenuVisablity("show");
+        }else{
+        setMenuBtn(menuIcon);
+        setMenuVisablity("hide");
+        }
+      }} className='menuBtn'>
+        <img src={menuBtn} alt='menu icon' />
+      </div>
+      </div>
+  <div className='menu'>
+        <a href="#">About</a>
+        <a href="#">Discover</a>
+        <a href="#">Get Started</a>
+  </div>
+  </div>
   </div>;
 }

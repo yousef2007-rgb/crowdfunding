@@ -8,10 +8,10 @@ import { Variants,motion } from 'framer-motion';
 function App() {
   return (
     <div className="App">
-    <Header/>
-    <Mastercraft/>
     <Information/>
     <About/>
+    <Mastercraft/>
+    <Header/>
     </div>
   );
 }

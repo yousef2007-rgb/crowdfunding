@@ -25,7 +25,7 @@ export default function About() {
       <p>  You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
   you’ll be added to a special Backer member list.</p>
       <div><h2>101</h2> <p>left</p></div>
-      <a href="#" onClick={()=>setBlurVisablity("show")}>Select Reward</a>
+      <a href="#AboutContainer" onClick={()=>setBlurVisablity("show")}>Select Reward</a>
   </div>
   <div className='rewardCard'>
       <h3>Black Edition Stand</h3>
@@ -33,7 +33,7 @@ export default function About() {
       <p>  You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
   member list. Shipping is included.</p>
       <div><h2>64</h2> <p>left</p></div>
-      <a href="#" onClick={()=>setBlurVisablity("show")}>Select Reward</a>
+      <a href="#AboutContainer" onClick={()=>setBlurVisablity("show")}>Select Reward</a>
   </div>
   <div id='outOfStockCard' className='rewardCard'>
       <h3>Black Edition Stand</h3>
@@ -41,7 +41,7 @@ export default function About() {
       <p>  You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
   to our Backer member list. Shipping is included.</p>
       <div><h2>0</h2> <p>left</p></div>
-      <a href="#">Out of Stock</a>
+      <a>Out of Stock</a>
   </div>
   <div id={blurVisablity} className="blur">
   <div className='thankCard'>
@@ -49,7 +49,7 @@ export default function About() {
     <h2>Thanks for your support!</h2>
     <p>  Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
   an email once our campaign is completed.</p>
-  <a href="#" onClick={()=>setBlurVisablity("hide")}>Got it!</a>
+  <a href="#AboutContainer" onClick={()=>setBlurVisablity("hide")}>Got it!</a>
   </div>
   </div>
   </motion.div>;

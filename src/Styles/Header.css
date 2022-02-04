@@ -19,6 +19,9 @@
 }
 
 .HeaderContainer {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,12 +65,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
   border: 1px solid silver;
-  padding: 40px 20px;
+  padding: 10px;
   border-radius: 15px;
   -webkit-box-shadow: 5px  #888888;
           box-shadow: 5px  #888888;

@@ -1,4 +1,7 @@
 .MastercraftContainer {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   background-color: white;
   max-width: 500px;
   margin-left: auto;
@@ -69,5 +72,211 @@
 
 .bookmarkBtn {
   cursor: pointer;
+}
+
+.cardTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardTop img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: auto;
+}
+
+.mastercraftRewardCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
+  position: relative;
+  border: 1px solid silver;
+  padding: 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px  #888888;
+          box-shadow: 5px  #888888;
+  margin-top: 20px;
+}
+
+.mastercraftRewardCard h3 {
+  margin: 0;
+}
+
+.mastercraftRewardCard p {
+  font-size: 11px;
+  color: gray;
+  line-height: 25px;
+  margin: 0;
+}
+
+.mastercraftRewardCard span {
+  font-size: 11px;
+  color: #147b74;
+  margin-top: 15px;
+}
+
+.mastercraftRewardCard a {
+  text-decoration: none;
+  color: white;
+  background-color: #147b74;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 15px 30px;
+  border-radius: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#outOfStockCard {
+  opacity: 0.5;
+}
+
+.mastercraftMenu {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid silver;
+  padding: 10px;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px  #888888;
+          box-shadow: 5px  #888888;
+  max-width: 290px;
+  background-color: white;
+}
+
+.mastercraftMenu a {
+  text-decoration: none;
+  color: black;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 15px 30px;
+  border-radius: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.blur {
+  overflow-y: scroll;
+}
+
+.radioButton {
+  margin-right: 10px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  border: 2px solid silver;
+}
+
+#choosen {
+  border: 1px solid #147b74;
+}
+
+#choosen .radioButton {
+  background-color: #147b74;
+}
+
+#choosen .pledge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pledge {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid silver;
+}
+
+.pledge p {
+  margin: 0;
+  padding: 15px;
+}
+
+.pledgeInput {
+  border: 1px solid silver;
+  border-radius: 15px;
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pledgeInput p {
+  margin: 0;
+  padding: 0;
+}
+
+.pledgeInput input {
+  border: 0px;
+  outline: none;
+  width: 34px;
+  height: 34px;
+}
+
+.continueBtn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.continueBtn a {
+  color: white;
+}
+
+.cardHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=Mastercraft.css.map */

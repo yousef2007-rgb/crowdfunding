@@ -1,5 +1,6 @@
 $green:hsl(176, 72%, 28%);
 .MastercraftContainer{
+    order: 2;
     background-color: white;
     max-width: 500px;
     margin-left: auto;
@@ -47,4 +48,136 @@ $green:hsl(176, 72%, 28%);
 }
 .bookmarkBtn{
     cursor: pointer;
+}
+.cardTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img{
+        width: fit-content;
+        height: fit-content;
+        margin-left: auto;
+    }
+}
+.mastercraftRewardCard{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    position: relative;
+    border: 1px solid silver;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px  #888888;
+    margin-top: 20px;
+    h3{
+        margin: 0;
+    }
+    p{
+        font-size: 11px;
+        color: gray;
+        line-height: 25px;
+        margin: 0;
+    }
+    span{
+        font-size: 11px;
+        color: $green;
+        margin-top: 15px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        background-color: $green;
+        height: fit-content;
+        padding: 15px 30px;
+        border-radius: 30px;
+        width: fit-content;
+    }
+}
+#outOfStockCard{
+    opacity: 0.5;
+}
+.mastercraftMenu{
+    position:absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid silver;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 5px  #888888;
+    max-width: 290px;
+    background-color: white;
+    a{
+        text-decoration: none;
+        color: black;
+        height: fit-content;
+        padding: 15px 30px;
+        border-radius: 30px;
+        width: fit-content;
+    }
+}
+.blur{
+
+    overflow-y: scroll;
+}
+.radioButton{
+    margin-right:10px ;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    border: 2px solid silver;
+}
+#choosen{
+    .radioButton{
+        background-color: $green;
+    }
+    .pledge{
+        display: flex;
+    }
+    border: 1px solid $green;
+}
+.pledge{
+    display: none;
+    flex-direction: column;
+    border-top: 1px solid silver;
+    p{
+        margin: 0;
+        padding: 15px;
+    }
+}
+.pledgeInput{
+    border:1px solid silver ;
+    border-radius: 15px;
+    padding: 5px 10px;
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    display: flex;
+    align-items: center;
+    input{
+        border: 0px ;
+        outline: none;
+        width: 34px;
+        height: 34px;
+    }
+}
+.continueBtn{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+        color: white;
+    }
+}
+.cardHeader{
+    display: flex;
+    align-items: center;
 }
